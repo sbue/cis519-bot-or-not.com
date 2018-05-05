@@ -1,0 +1,12 @@
+Data confirmation:
+Extracted dictionary of words and their number of appearances in all tweet bodies across the bots tweet data
+Graphed this data (y-axis is proportion of tweets containing said word)
+This was done with the generated bigrams (every pair of consecutive words, i.e. 'I like to code' becomes (I, like), (like, to), (to, code)) as well
+Once these graphs were generated, similar graphs were made for the obtained organic user tweets as well
+Comparing the two sets of graphs, we can see that the most commonly used words were similar (likely because the chosen organic users were chosen because of their political tweets)
+This way, our learning algorithm will not select bots solely on the appearance of 'political' words such as 'trump' or 'russia'.
+
+Feature Extraction:
+Using TensorFlow, we convert the words in all tweet text to vectors, and collect them in a count bag
+Usernames, user descriptions, number of tweets in the specified time range, time of said tweets, number of followers, list of word2vec count bags (one for each tweet), etc. are used as features when inputting to the learning algorithm
+Bot users and organic users are used to train the data, with __% of data held out to test with (x5 or x10 cross validation?)

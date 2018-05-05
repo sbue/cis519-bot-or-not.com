@@ -1,0 +1,504 @@
+Word2Vec bot-only tweets output:
+Manes-MacBook-Pro:Project manewilliams$ python3 tweets_word2vec.py 
+WARNING:tensorflow:From /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+Data size 3217426
+Most common words (+UNK) [['UNK', 278521], ('t', 139784), ('https', 123449), ('co', 118547), ('RT', 59371)]
+Sample data [0, 382, 250, 16, 379, 6, 134, 20, 125, 174] ['UNK', 'IslamKills', 'Are', 'you', 'trying', 'to', 'say', 'that', 'there', 'were']
+382 IslamKills -> 250 Are
+382 IslamKills -> 0 UNK
+250 Are -> 16 you
+250 Are -> 382 IslamKills
+16 you -> 250 Are
+16 you -> 379 trying
+379 trying -> 16 you
+379 trying -> 6 to
+WARNING:tensorflow:From tweets_word2vec.py:223: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-05-03 13:59:41.810913: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Initialized
+Average loss at step  0 :  245.0008544921875
+Nearest to and: Rot, OWNERS, Zen, ridicules, TheRun2016, cerenomri, simostransit, meetthepress,
+Nearest to To: Amtszeit, T_Miller_Harper, NUCLEAR, Patricia, Bargains, Singer, integration, pans,
+Nearest to I: seasonal, Toure, Perfectly, Carville, intellihubnewsRT, occasional, spirits, reassurance,
+Nearest to If: epidemic, LIE, TheJusticeDept, BOY, WALLS, faux, InnSichORT, 74,
+Nearest to co: RapinBill, une, Korea, xXQjErgbyQRT, Crybaby, cloud, drayzze, french,
+Nearest to The: theory, testament, AlexaKaySam, DJBabyAce, PenceScience, Freddie, exist, Abby,
+Nearest to their: saves, USNavy, SankofaBrown, safely, ReasonWhyWeAreNotFriends, INC, OrovilleDam, Places,
+Nearest to What: Youngest, goofy, e9D4TB4pLS, silencing, Rachetgrrl, wipe, re, AtlantaFalcons,
+Nearest to she: HillarysHandSignals, Mccaskill, Generals, BeachCity55, rankin, UDaWeVM8TZ, Murder, easily,
+Nearest to would: tten, JillStein2016, Yells, blo, fave, Wagner, Staging, AnnCoulter,
+Nearest to like: classified, Frau, ogkeyser, ElevationForAll, overgrown, Jethro, TweepAQuote, Snow,
+Nearest to be: peach, modesty, lauriecrosswell, CNNgo, Denounce, tube, boot, peeps,
+Nearest to A: 0upLzbJy8E, Trey_Hannah617, PUTTING, revelations, livebroadcast, fu, penny, Zukunft,
+Nearest to s: BWI, curious, ces, Followed, sorority, DorisTruong, Sheree, TrumpTape,
+Nearest to they: teenager, ding, TimJGraham, ballo, ice, LukeRussert, heels, Pander,
+Nearest to Trump: wolfblitzer, Meddling, sehe, mirror, tripping, rigged, menschlicher, fit,
+Average loss at step  2000 :  118.86855748176575
+Average loss at step  4000 :  57.551151961803434
+Average loss at step  6000 :  35.35826615667343
+Average loss at step  8000 :  25.254896528959275
+Average loss at step  10000 :  17.77904777121544
+Nearest to and: to, for, of, https, in, from, amp, is,
+Nearest to To: Amtszeit, Singer, CrookedHillary, IfMyFriendsSawMeNow, Join, impossible, between, Ja,
+Nearest to I: he, you, they, fundamental, democratic, Nationalist, Tweets, blocks,
+Nearest to If: LIE, BOY, fool, too, instructions, TheJusticeDept, useless, quality,
+Nearest to co: About, BIZPACReview, HillaryForPrison2016, via, warning, https, Liberal, mackhanelesa,
+Nearest to The: the, https, AlexaKaySam, BONG, turn, testament, Ficklin, exist,
+Nearest to their: saves, SankofaBrown, half, POTUSLastTweet, USNavy, taking, Self, censored,
+Nearest to What: re, wipe, Expert, Same, Hacking, Politico, Nevada, Propaganda,
+Nearest to she: he, All, BONG, Generals, easily, bed, phrase, employee,
+Nearest to would: AnnCoulter, fave, had, tten, elites, Yeah, hosts, Donna,
+Nearest to like: classified, ogkeyser, glitter, shut, own, cannot, couldn, hide,
+Nearest to be: some, Bricks, BONG, lauriecrosswell, TheFoundingSon, Rose, consider, peach,
+Nearest to A: Trey_Hannah617, UNK, needs, Early, revelations, Valley, stood, Zukunft,
+Nearest to s: is, are, of, briefings, being, with, has, TopNews,
+Nearest to they: I, you, teenager, not, basically, HA, ice, ding,
+Nearest to Trump: the, wolfblitzer, Sanders, bra, Callisto1947, Beat, conclusions, couldn,
+Average loss at step  12000 :  13.929169276952743
+Average loss at step  14000 :  11.582980965137482
+Average loss at step  16000 :  9.57473588824272
+Average loss at step  18000 :  8.580857915639877
+Average loss at step  20000 :  7.366018606901169
+Nearest to and: amp, for, to, in, of, from, on, is,
+Nearest to To: Singer, Amtszeit, Ja, CrookedHillary, eavesdropann, impossible, between, IfMyFriendsSawMeNow,
+Nearest to I: he, you, they, we, We, You, fundamental, UNK,
+Nearest to If: epidemic, LIE, BOY, instructions, 74, useless, mothers, UNK,
+Nearest to co: via, About, WHAA, Goldman, https, Angeles, zijn, RT,
+Nearest to The: the, AlexaKaySam, https, BONG, testament, Activists, UNK, Ficklin,
+Nearest to their: WHAA, Rushs_Dad, USNavy, half, saves, Unfortunately, your, not,
+Nearest to What: wipe, Comm, We, designed, Youngest, re, Expert, Politico,
+Nearest to she: he, Reinstate, it, SteinBaraka, Generals, I, Risky, easily,
+Nearest to would: AnnCoulter, fave, elites, can, ll, civilrights_rr, WHAA, had,
+Nearest to like: classified, ogkeyser, couldn, mercedesschlapp, glitter, shut, own, unknown,
+Nearest to be: have, lauriecrosswell, Bricks, Rose, consider, peach, change, some,
+Nearest to A: UNK, stood, FOX5Atlanta, Early, Trey_Hannah617, needs, Your, jm_meunier,
+Nearest to s: is, has, and, was, are, with, amp, being,
+Nearest to they: you, I, we, it, not, ding, We, accurately,
+Nearest to Trump: Obama, Hillary, Clinton, UNK, WHAA, Sanders, injures, It,
+Average loss at step  22000 :  6.83914078938961
+Average loss at step  24000 :  6.297456268072128
+Average loss at step  26000 :  5.946202147245407
+Average loss at step  28000 :  5.709687164783478
+Average loss at step  30000 :  5.386937029480934
+Nearest to and: amp, for, of, from, in, to, that, on,
+Nearest to To: Ja, Singer, to, In, Amtszeit, eavesdropann, CrookedHillary, between,
+Nearest to I: they, you, he, we, We, You, she, fundamental,
+Nearest to If: epidemic, LIE, BOY, UNK, instructions, mothers, useless, JamFlint,
+Nearest to co: via, https, WHAA, Chainsaw, About, Goldman, Angeles, lasts,
+Nearest to The: the, AlexaKaySam, BONG, Activists, testament, DailyCaller, UNK, https,
+Nearest to their: your, our, the, Rushs_Dad, WHAA, half, USNavy, Unfortunately,
+Nearest to What: silencing, designed, Why, It, We, wipe, Comm, tagging,
+Nearest to she: he, it, Reinstate, that, I, SteinBaraka, Generals, there,
+Nearest to would: ll, can, could, AnnCoulter, had, elites, will, fave,
+Nearest to like: ogkeyser, classified, mercedesschlapp, own, haven, couldn, lane, shut,
+Nearest to be: have, peach, lauriecrosswell, Bricks, change, consider, Rose, tube,
+Nearest to A: Bias, welcoming, stood, needs, Your, revelations, Wasn, SOS,
+Nearest to s: is, has, was, and, amp, Determine, being, Anti,
+Nearest to they: you, I, we, We, it, accurately, he, not,
+Nearest to Trump: Obama, Hillary, Clinton, Sanders, Cruz, it, WHAA, injures,
+Average loss at step  32000 :  5.199194256544113
+Average loss at step  34000 :  5.101616035699845
+Average loss at step  36000 :  4.904428316950798
+Average loss at step  38000 :  4.8290396772623065
+Average loss at step  40000 :  4.759026542305946
+Nearest to and: amp, for, from, but, of, or, to, in,
+Nearest to To: to, Ja, In, Singer, eavesdropann, Amtszeit, For, IG,
+Nearest to I: they, we, you, he, You, We, i, she,
+Nearest to If: epidemic, LIE, instructions, mothers, BOY, UNK, useless, JamFlint,
+Nearest to co: via, RT, Chainsaw, Goldman, Angeles, concussion, https, lasts,
+Nearest to The: the, AlexaKaySam, Activists, BONG, A, testament, DailyCaller, DaysRT,
+Nearest to their: your, our, the, his, Rushs_Dad, my, WHAA, USNavy,
+Nearest to What: silencing, Why, It, designed, tagging, BehindTheRant, We, UNK,
+Nearest to she: he, it, Reinstate, I, that, SteinBaraka, there, It,
+Nearest to would: ll, can, could, will, may, s, AnnCoulter, hillarysemail,
+Nearest to like: haven, ogkeyser, hide, fatalmocking, Everywhere, shut, lane, MikeRumbo66,
+Nearest to be: have, Bricks, get, peach, is, change, consider, lauriecrosswell,
+Nearest to A: Bias, The, welcoming, Langston, EXPIRATION, DocThompsonShow, revelations, needs,
+Nearest to s: is, was, has, and, Determine, Is, shd, Missed,
+Nearest to they: you, we, I, We, They, accurately, he, it,
+Nearest to Trump: Obama, Hillary, Clinton, Sanders, Cruz, realDonaldTrump, injures, POTUS,
+Average loss at step  42000 :  4.691221898317337
+Average loss at step  44000 :  4.628633765101433
+Average loss at step  46000 :  4.6018352398872375
+Average loss at step  48000 :  4.5429726408720015
+Average loss at step  50000 :  4.501960401535034
+Nearest to and: amp, but, from, or, for, to, of, that,
+Nearest to To: to, In, Ja, For, On, eavesdropann, Singer, integration,
+Nearest to I: they, we, he, you, i, You, We, she,
+Nearest to If: epidemic, LIE, mothers, instructions, So, BOY, When, UNK,
+Nearest to co: via, RT, Chainsaw, Goldman, Sh, concussion, WHAA, lasts,
+Nearest to The: the, AlexaKaySam, A, testament, DaysRT, BONG, Activists, Astounding,
+Nearest to their: your, our, his, the, my, her, Rushs_Dad, WHAA,
+Nearest to What: Why, It, silencing, designed, tagging, This, BehindTheRant, what,
+Nearest to she: he, it, that, I, Reinstate, they, there, She,
+Nearest to would: could, will, ll, can, may, RedRightRepubRT, hillarysemail, s,
+Nearest to like: haven, hide, database, TrumpWeiners4, ogkeyser, fatalmocking, MikeRumbo66, shut,
+Nearest to be: have, get, is, Bricks, kill, peach, consider, not,
+Nearest to A: Bias, a, The, Langston, welcoming, DocThompsonShow, pantsRT, needs,
+Nearest to s: is, was, has, and, Determine, says, Is, Missed,
+Nearest to they: you, we, I, We, he, They, it, she,
+Nearest to Trump: Obama, Hillary, Clinton, Sanders, Cruz, realDonaldTrump, injures, Youngstown,
+Average loss at step  52000 :  4.48813548374176
+Average loss at step  54000 :  4.4395130319595335
+Average loss at step  56000 :  4.4136402312517165
+Average loss at step  58000 :  4.387754002332687
+Average loss at step  60000 :  4.340440725684166
+Nearest to and: amp, but, or, from, that, as, for, when,
+Nearest to To: to, In, For, On, Ja, eavesdropann, With, beginning,
+Nearest to I: they, we, he, you, i, You, We, she,
+Nearest to If: UNK, epidemic, When, LIE, So, instructions, mothers, Thank,
+Nearest to co: via, Sh, Chainsaw, concussion, lasts, t, WHAA, politicsRT,
+Nearest to The: the, AlexaKaySam, DaysRT, testament, LarsWienand, Astounding, agendaRT, A,
+Nearest to their: your, our, his, my, the, her, WHAA, Rushs_Dad,
+Nearest to What: Why, It, silencing, designed, what, BehindTheRant, This, tagging,
+Nearest to she: he, it, that, Reinstate, they, She, there, I,
+Nearest to would: could, will, ll, can, may, should, RedRightRepubRT, hillarysemail,
+Nearest to like: haven, hide, database, fatalmocking, Everywhere, shut, MikeRumbo66, TrumpWeiners4,
+Nearest to be: have, get, Bricks, was, not, is, been, Mesmerizing,
+Nearest to A: a, Bias, Langston, The, DocThompsonShow, welcoming, Rican, DJ,
+Nearest to s: is, was, has, Determine, says, Missed, shd, Is,
+Nearest to they: you, we, I, We, he, They, she, accurately,
+Nearest to Trump: Hillary, Obama, Clinton, Sanders, Cruz, realDonaldTrump, injures, Sucks,
+Average loss at step  62000 :  4.351320527672768
+Average loss at step  64000 :  4.3232111774683
+Average loss at step  66000 :  4.3200337978601455
+Average loss at step  68000 :  4.305860041022301
+Average loss at step  70000 :  4.30841260433197
+Nearest to and: amp, but, or, from, that, when, as, of,
+Nearest to To: to, In, For, Ja, On, Should, Will, With,
+Nearest to I: we, they, i, he, you, You, We, she,
+Nearest to If: When, So, epidemic, LIE, Thank, instructions, mothers, UNK,
+Nearest to co: via, Chainsaw, Sh, concussion, politicsRT, lasts, WHAA, RT,
+Nearest to The: the, AlexaKaySam, testament, agendaRT, DaysRT, LarsWienand, Astounding, Activists,
+Nearest to their: your, our, his, her, my, the, Rushs_Dad, WHAA,
+Nearest to What: Why, It, silencing, what, designed, BehindTheRant, This, Debra,
+Nearest to she: he, it, they, She, that, He, Reinstate, there,
+Nearest to would: will, could, can, ll, may, should, RedRightRepubRT, must,
+Nearest to like: hide, haven, database, Everywhere, fatalmocking, TrumpWeiners4, Consumer, MikeRumbo66,
+Nearest to be: have, get, been, was, is, not, Bricks, kill,
+Nearest to A: a, Bias, Langston, DocThompsonShow, DJ, welcoming, The, Rican,
+Nearest to s: is, was, has, Determine, says, Is, Missed, Illegally,
+Nearest to they: we, you, I, he, They, We, she, accurately,
+Nearest to Trump: Obama, Hillary, Clinton, Sanders, Cruz, realDonaldTrump, rtifyouare, HillaryClinton,
+Average loss at step  72000 :  4.303540543317795
+Average loss at step  74000 :  4.2762672786712645
+Average loss at step  76000 :  4.291633704900741
+Average loss at step  78000 :  4.279861431837082
+Average loss at step  80000 :  4.279908079624176
+Nearest to and: amp, but, or, from, when, that, as, of,
+Nearest to To: to, For, In, Should, Will, On, With, Ja,
+Nearest to I: we, they, i, he, you, You, We, They,
+Nearest to If: When, Thank, So, LIE, epidemic, mothers, instructions, And,
+Nearest to co: via, Chainsaw, Sh, concussion, politicsRT, WHAA, Oz, lasts,
+Nearest to The: the, AlexaKaySam, testament, agendaRT, DaysRT, Astounding, LarsWienand, BONG,
+Nearest to their: your, his, our, her, my, the, WHAA, Rushs_Dad,
+Nearest to What: Why, It, silencing, what, designed, BehindTheRant, This, Debra,
+Nearest to she: he, they, She, it, He, there, that, Reinstate,
+Nearest to would: will, could, ll, can, may, should, d, must,
+Nearest to like: hide, haven, fatalmocking, TrumpWeiners4, database, Consumer, Everywhere, Motor,
+Nearest to be: have, get, been, was, is, not, Bricks, kill,
+Nearest to A: a, Bias, DocThompsonShow, Langston, DJ, welcoming, needs, Rican,
+Nearest to s: is, was, has, Determine, says, would, Missed, shd,
+Nearest to they: we, you, I, he, They, she, We, there,
+Nearest to Trump: Obama, Hillary, Sanders, Clinton, Cruz, trump, realDonaldTrump, rtifyouare,
+Average loss at step  82000 :  4.271103955745697
+Average loss at step  84000 :  4.266893053650856
+Average loss at step  86000 :  4.257736647248268
+Average loss at step  88000 :  4.241679049134254
+Average loss at step  90000 :  4.245081868171692
+Nearest to and: amp, but, or, from, when, that, for, as,
+Nearest to To: to, For, In, Will, Should, On, With, Pauvres,
+Nearest to I: they, we, i, he, You, you, she, We,
+Nearest to If: When, Thank, So, And, LIE, instructions, mothers, epidemic,
+Nearest to co: via, Sh, Chainsaw, politicsRT, concussion, WHAA, Oz, TimBartenderRT,
+Nearest to The: the, AlexaKaySam, DaysRT, Astounding, testament, agendaRT, LarsWienand, No,
+Nearest to their: your, his, our, her, my, the, WHAA, stolen,
+Nearest to What: Why, It, silencing, what, BehindTheRant, designed, This, Debra,
+Nearest to she: he, She, they, He, it, there, I, that,
+Nearest to would: will, could, can, ll, may, should, must, d,
+Nearest to like: hide, haven, fatalmocking, database, Everywhere, couldn, Consumer, TrumpWeiners4,
+Nearest to be: have, get, been, was, is, Bricks, m, not,
+Nearest to A: a, Bias, Langston, DocThompsonShow, DJ, welcoming, Rican, OPPOSE,
+Nearest to s: is, was, has, Determine, says, Missed, would, takes,
+Nearest to they: we, you, I, he, They, she, We, there,
+Nearest to Trump: Obama, Hillary, Clinton, Sanders, trump, Cruz, realDonaldTrump, rtifyouare,
+Average loss at step  92000 :  4.242088904261589
+Average loss at step  94000 :  4.247817409873009
+Average loss at step  96000 :  4.244096995711327
+Average loss at step  98000 :  4.2387411421537395
+Average loss at step  100000 :  4.226129394173622
+Nearest to and: amp, but, or, from, when, as, thought, for,
+Nearest to To: to, For, In, Will, On, Should, With, Pauvres,
+Nearest to I: i, they, we, he, You, you, We, They,
+Nearest to If: When, Thank, So, And, LIE, epidemic, mothers, UNK,
+Nearest to co: via, Sh, Chainsaw, politicsRT, concussion, shore, Oz, zijn,
+Nearest to The: the, DaysRT, Astounding, testament, AlexaKaySam, agendaRT, standardnews, No,
+Nearest to their: your, his, our, her, my, the, WHAA, stolen,
+Nearest to What: Why, It, what, silencing, This, designed, When, BehindTheRant,
+Nearest to she: he, they, She, it, He, there, I, that,
+Nearest to would: will, could, ll, can, may, should, must, d,
+Nearest to like: hide, haven, database, TrumpWeiners4, fatalmocking, Motor, Consumer, Everywhere,
+Nearest to be: have, get, been, was, is, m, kill, Mesmerizing,
+Nearest to A: a, Langston, Bias, DocThompsonShow, LAWS, DJ, OPPOSE, Rican,
+Nearest to s: is, was, has, takes, Determine, says, Missed, Is,
+Nearest to they: we, you, he, I, she, They, We, there,
+Nearest to Trump: Obama, Hillary, Sanders, trump, Clinton, Cruz, realDonaldTrump, amwriting,
+
+
+
+Word2vec total output:
+Manes-MacBook-Pro:Project manewilliams$ python3 tweets_word2vec.py 
+WARNING:tensorflow:From /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+Data size 4421054
+Most common words (+UNK) [['UNK', 329446], ('the', 124586), ('to', 97262), ('a', 69242), ('of', 62113)]
+Sample data [0, 20, 7, 86, 7428, 61, 1360, 548, 0, 38] ['UNK', 'clinton', 'trump', 'should', 'apologized', 'more', 'attacked', 'less', 'UNK', 'who']
+20 clinton -> 0 UNK
+20 clinton -> 7 trump
+7 trump -> 86 should
+7 trump -> 20 clinton
+86 should -> 7428 apologized
+86 should -> 7 trump
+7428 apologized -> 61 more
+7428 apologized -> 86 should
+WARNING:tensorflow:From tweets_word2vec.py:289: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-05-05 01:32:47.029220: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Initialized
+Average loss at step  0 :  296.1373291015625
+Nearest to will: 100b, magaselfie, fútbol, lace, 60, caring, appt, bure,
+Nearest to us: complicating, bahnhof, paintings, prerequisite, emeka, stor, assad, iota,
+Nearest to says: wembley, beat, developer, sevenlayercake, attacked, propose, clintoncash, hong,
+Nearest to up: outlaw, indveng, recognizes, daveweigel, 3pm, jeanie, mitarbeiter, radicalislam,
+Nearest to never: tierrah46, lacy0902, wooohooo, statewide, clan, cabinet, amounted, dho,
+Nearest to would: richmovies, addcartoonstohistory, betcha, anarchy, hatchet, o3ik907v7c, n, trumpsfirstorder,
+Nearest to so: fixer, fanatical, türkische, kenny, fetches, 8319pswn6d, a7, acct,
+Nearest to should: c0dnfytha1, tuberculosis, ignacio, cun, gifts, opadqqow53, wildly, smiley,
+Nearest to good: untappd, swing, bert, reacting, scratch, leftistviolence, vivaces, bill,
+Nearest to of: winery, dating, jtwwytojk9, trishintel, claimed, grandfather, 487, afterbirth,
+Nearest to like: sig, goldenshowers, notwithher, operative, khanoisseur, toconservatives, sabéis, realdonaldtru,
+Nearest to realdonaldtrump: baiter, bauer, providence, disappearing, bombard, dougschoen, icihgbrter, birmingham,
+Nearest to at: ap8bfcwbd4, ज, sally, legislatives2017, fathersday, anyone, marryhandy, obamas,
+Nearest to me: kashmir, 1776trump, btw, halves, zahra, yep, s1osjv4ftq, mcmurray,
+Nearest to more: melanie, bárcenas, keithscott, ibelieveinipa, florid, wher, wahlprogrammen, regierungserklärung,
+Nearest to his: win, onstage, qim, sli, reactions, chnvhliuzb, mores, heute,
+Average loss at step  2000 :  117.58672986125946
+Average loss at step  4000 :  54.86665396404266
+Average loss at step  6000 :  34.74959244060516
+Average loss at step  8000 :  24.08619478774071
+Average loss at step  10000 :  18.083574054956436
+Nearest to will: can, and, to, gonna, lou, jewish, installment, ads,
+Nearest to us: bigger, gohomederay, the, whaa, brian, worked, pleased, demand,
+Nearest to says: clintoncash, beat, 3qdisjyhb9, univision, stay, wembley, lie, attacked,
+Nearest to up: outlaw, oct, community, behind, gifts, lick, intentionally, laughs,
+Nearest to never: bong, cabinet, letting, bound, editorial, lacy0902, finds, makeamericagreatagain,
+Nearest to would: might, n, bong, richmovies, addcartoonstohistory, dictator, 16, icelebratetrumpwith,
+Nearest to so: nap, got, managed, imnotopposedto, trending, years, fixer, seth,
+Nearest to should: bong, baked, vegasgopdebate, gifts, republic, fakes, visitors, toss,
+Nearest to good: swing, fundraising, lion, doctor, ceremony, trump2016, stamp, scratch,
+Nearest to of: in, for, on, is, with, to, and, smiles,
+Nearest to like: operative, lawyers, ge, differences, shld, toconservatives, testimony, scared,
+Nearest to realdonaldtrump: defund, disappearing, whaa, 2011, topnews, fame, assange, ruling,
+Nearest to at: brings, ज, rebootliberty, obamas, of, fusion, curse, ap8bfcwbd4,
+Nearest to me: whaa, financial, yep, btw, fixes, you, fish, notmypresident,
+Nearest to more: whaa, grandpa, wheniamonmyowni, olympia, king, 84, melanie, cheat,
+Nearest to his: play, the, win, heute, obama, bras, dx1xhel8tk, usarubric,
+Average loss at step  12000 :  14.359438372850418
+Average loss at step  14000 :  11.906547516822815
+Average loss at step  16000 :  10.24623385643959
+Average loss at step  18000 :  9.032378518104553
+Average loss at step  20000 :  8.143683428764342
+Nearest to will: can, and, to, gonna, should, cookout, jaws, would,
+Nearest to us: bigger, the, warm, lunatics, brian, worked, paintings, pleased,
+Nearest to says: clintoncash, 3qdisjyhb9, and, univision, doesn, beat, is, clarify,
+Nearest to up: outlaw, oct, gifts, community, behind, wasteamillionin3words, intentionally, onewordoffbooks,
+Nearest to never: tierrah46, you, may, bound, asylum, wont, lacy0902, editorial,
+Nearest to would: might, n, richmovies, should, will, thehashpod, bong, addcartoonstohistory,
+Nearest to so: got, nap, managed, but, that, fixer, trending, UNK,
+Nearest to should: will, baked, don, would, toss, and, bong, vegasgopdebate,
+Nearest to good: swing, scratch, stamp, fundraising, closet, sore, horribly, ceremony,
+Nearest to of: for, in, and, on, buried, with, at, newshour,
+Nearest to like: ge, operative, lawyers, were, than, optimize, scared, deemed,
+Nearest to realdonaldtrump: defund, disappearing, topnews, whaa, liberry, fame, neverhillary, baiter,
+Nearest to at: in, brings, ज, of, for, and, curse, obamas,
+Nearest to me: you, financial, yep, whaa, fixes, btw, fish, notmypresident,
+Nearest to more: whaa, keithscott, grandpa, these, heating, wher, 84, nest,
+Nearest to his: your, her, the, dx1xhel8tk, play, obama, trump, my,
+Average loss at step  22000 :  7.3056180014610295
+Average loss at step  24000 :  6.8485847411155705
+Average loss at step  26000 :  6.434102659702301
+Average loss at step  28000 :  6.038018933057785
+Average loss at step  30000 :  5.762489190578461
+Nearest to will: can, to, gonna, and, should, would, could, cookout,
+Nearest to us: me, bigger, lunatics, warm, our, the, reputation, brian,
+Nearest to says: clintoncash, 3qdisjyhb9, doesn, and, univision, maxtu2qlpm, has, is,
+Nearest to up: outlaw, nohostagestaken, behind, wasteamillionin3words, gifts, them, f35, min,
+Nearest to never: tierrah46, may, i, you, bound, wont, asylum, armani,
+Nearest to would: might, will, should, can, n, richmovies, to, thehashpod,
+Nearest to so: that, but, managed, nap, got, too, fixer, kenny,
+Nearest to should: will, would, don, baked, and, toss, terencecrutcher, vegasgopdebate,
+Nearest to good: closet, sore, yr, stamp, scratch, ceremony, daytona500, horribly,
+Nearest to of: for, in, and, buried, with, from, is, at,
+Nearest to like: ge, operative, were, optimize, lawyers, deemed, than, jong,
+Nearest to realdonaldtrump: defund, disappearing, UNK, neverhillary, liberry, topnews, now, whaa,
+Nearest to at: in, brings, ज, for, on, and, of, obamas,
+Nearest to me: you, fixes, financial, them, whaa, yep, us, pedogate,
+Nearest to more: whaa, wher, ign, these, nest, trashed, keithscott, selma,
+Nearest to his: your, her, my, the, their, dx1xhel8tk, obama, trump,
+Average loss at step  32000 :  5.567626395225525
+/'
+"Average loss at step  34000 :  5.455491584062576
+"Average loss at step  36000 :  5.2876623101234435
+Average loss at step  38000 :  5.237178799510002
+Average loss at step  40000 :  6.847827666759491
+Nearest to will: can, should, to, would, gonna, could, and, won,
+Nearest to us: me, freedomcities, lunatics, our, bigger, them, warm, america,
+Nearest to says: doesn, 3qdisjyhb9, clintoncash, has, maxtu2qlpm, and, univision, but,
+Nearest to up: outlaw, nohostagestaken, them, min, behind, wasteamillionin3words, defenseless, aft,
+Nearest to never: tierrah46, may, i, mormonism, you, wont, bound, not,
+Nearest to would: will, should, might, can, to, richmovies, don, doesn,
+Nearest to so: too, but, that, got, UNK, managed, nap, studies,
+Nearest to should: will, would, don, can, baked, and, toss, to,
+Nearest to good: great, sore, jnr, yr, closet, stamp, freedomcities, scratch,
+Nearest to of: for, in, and, buried, from, by, newshour, with,
+Nearest to like: ge, mean, were, operative, optimize, psychedelic, 305, feminist,
+Nearest to realdonaldtrump: UNK, defund, neverhillary, disappearing, trump, whaa, liberry, now,
+Nearest to at: in, brings, for, and, on, after, ज, obamas,
+Nearest to me: them, you, us, him, financial, fixes, whaa, yep,
+Nearest to more: whaa, wher, better, ign, these, caves, trashed, selma,
+Nearest to his: her, your, my, their, the, trump, dx1xhel8tk, obama,
+Average loss at step  42000 :  6.2939271893501285
+Average loss at step  44000 :  5.825182631015777
+Average loss at step  46000 :  5.508351857423782
+Average loss at step  48000 :  5.3009319543838505
+Average loss at step  50000 :  5.192287965536117
+Nearest to will: can, should, would, could, to, gonna, and, won,
+Nearest to us: me, them, our, u, lunatics, america, freedomcities, cleats,
+Nearest to says: doesn, has, 3qdisjyhb9, clintoncash, and, maxtu2qlpm, but, univision,
+Nearest to up: outlaw, comebacks, them, nohostagestaken, dianne, decisive, off, min,
+Nearest to never: ever, mormonism, tierrah46, i, you, not, may, we,
+Nearest to would: will, should, can, might, to, don, doesn, may,
+Nearest to so: too, but, that, UNK, how, managed, as, nap,
+Nearest to should: will, would, can, must, don, and, to, may,
+Nearest to good: great, sore, jnr, small, yr, scratch, closet, this,
+Nearest to of: for, in, and, buried, from, is, by, therealnews,
+Nearest to like: ge, mean, were, psychedelic, 305, make, operative, optimize,
+Nearest to realdonaldtrump: trump, UNK, now, neverhillary, disappearing, hillaryclinton, liberry, defund,
+Nearest to at: in, after, brings, for, and, on, ज, obamas,
+Nearest to me: them, you, him, us, fixes, financial, whaa, pedogate,
+Nearest to more: whaa, better, wher, ign, caves, these, nest, bengals,
+Nearest to his: your, her, my, their, the, dx1xhel8tk, trump, our,
+Average loss at step  52000 :  5.063740147829056
+Average loss at step  54000 :  4.971848911881446
+Average loss at step  56000 :  4.888473462224007
+Average loss at step  58000 :  4.8398058959245684
+Average loss at step  60000 :  4.789416933655739
+Nearest to will: can, should, would, could, gonna, to, and, must,
+Nearest to us: me, them, u, our, lunatics, freedomcities, america, cleats,
+Nearest to says: doesn, has, 3qdisjyhb9, but, clintoncash, and, maxtu2qlpm, dun,
+Nearest to up: outlaw, comebacks, nohostagestaken, them, dianne, ano, down, off,
+Nearest to never: ever, not, tierrah46, mormonism, i, just, kcstar, that,
+Nearest to would: will, should, can, might, to, don, may, and,
+Nearest to so: too, but, how, as, really, managed, UNK, that,
+Nearest to should: will, would, can, must, don, to, may, could,
+Nearest to good: great, small, sore, scratch, this, jnr, meaningless, lizs_heart,
+Nearest to of: in, for, from, buried, therealnews, ʷʰʸ, and, about,
+Nearest to like: mean, psychedelic, make, ge, than, optimize, 305, were,
+Nearest to realdonaldtrump: UNK, trump, now, hillaryclinton, yes, neverhillary, liberry, gaylovematters,
+Nearest to at: in, brings, after, for, on, and, ज, obamas,
+Nearest to me: them, him, us, you, fixes, financial, whaa, sca,
+Nearest to more: better, whaa, most, ign, wher, caves, bengals, dawnellemurray,
+Nearest to his: your, her, my, their, the, its, our, trump,
+Average loss at step  62000 :  4.773062491297722
+Average loss at step  64000 :  4.733378041744232
+Average loss at step  66000 :  4.707176345109939
+Average loss at step  68000 :  4.679180788755417
+Average loss at step  70000 :  4.726253412604332
+Nearest to will: can, would, should, could, gonna, must, may, to,
+Nearest to us: u, me, them, our, america, lunatics, cleats, freedomcities,
+Nearest to says: doesn, has, but, 3qdisjyhb9, and, did, clintoncash, maxtu2qlpm,
+Nearest to up: outlaw, comebacks, down, nohostagestaken, them, decisive, off, ano,
+Nearest to never: ever, just, not, i, tierrah46, mormonism, that, kcstar,
+Nearest to would: will, should, can, might, to, could, may, must,
+Nearest to so: too, but, how, as, not, really, that, ʷʰʸ,
+Nearest to should: will, would, must, can, don, could, may, to,
+Nearest to good: great, small, sore, scratch, lizs_heart, meaningless, jnr, yr,
+Nearest to of: for, ʷʰʸ, in, from, buried, therealnews, and, newshour,
+Nearest to like: mean, psychedelic, optimize, ge, make, ielvisgomes, allergic, 305,
+Nearest to realdonaldtrump: trump, hillaryclinton, now, neverhillary, gaylovematters, liberry, potus, yes,
+Nearest to at: in, brings, after, on, for, obamas, curse, picked,
+Nearest to me: them, him, us, you, fixes, her, pedogate, whaa,
+Nearest to more: better, most, whaa, wher, ign, caves, less, bengals,
+Nearest to his: your, her, their, my, its, the, our, trump,
+Average loss at step  72000 :  4.7247595744133
+Average loss at step  74000 :  4.6746429134607315
+Average loss at step  76000 :  4.650019417047501
+Average loss at step  78000 :  4.642708010435104
+Average loss at step  80000 :  4.6193217248916625
+Nearest to will: would, can, should, could, gonna, may, must, won,
+Nearest to us: u, them, me, our, america, freedomcities, cleats, him,
+Nearest to says: doesn, has, 3qdisjyhb9, but, would, clintoncash, beyoncé, said,
+Nearest to up: outlaw, comebacks, down, nohostagestaken, decisive, off, them, ano,
+Nearest to never: ever, i, just, tierrah46, mormonism, not, kcstar, always,
+Nearest to would: will, should, can, might, may, could, must, doesn,
+Nearest to so: too, but, how, really, as, ʷʰʸ, very, trending,
+Nearest to should: will, would, must, can, don, may, could, to,
+Nearest to good: great, small, lizs_heart, bad, meaningless, sore, scratch, yr,
+Nearest to of: for, from, buried, freebiafra, therealnews, ʷʰʸ, ll90iekoet, in,
+Nearest to like: mean, optimize, psychedelic, feminist, allergic, ge, ielvisgomes, make,
+Nearest to realdonaldtrump: trump, hillaryclinton, gaylovematters, now, potus, neverhillary, yes, liberry,
+Nearest to at: brings, in, after, obamas, legislatives2017, fathersday, pecker, curse,
+Nearest to me: them, him, us, you, her, myself, fixes, mkd9wroe9e,
+Nearest to more: better, most, whaa, less, ign, caves, ʷʰʸ, bengals,
+Nearest to his: her, your, their, my, its, the, trump, our,
+Average loss at step  82000 :  4.610889441967011
+Average loss at step  84000 :  4.607703956007957
+Average loss at step  86000 :  4.589995376706123
+Average loss at step  88000 :  4.583386127948761
+Average loss at step  90000 :  4.576929998755455
+Nearest to will: should, would, can, could, gonna, may, won, must,
+Nearest to us: u, them, me, our, america, cleats, lunatics, him,
+Nearest to says: doesn, has, 3qdisjyhb9, said, beyoncé, knows, wants, would,
+Nearest to up: outlaw, down, nohostagestaken, comebacks, f35, ano, decisive, off,
+Nearest to never: ever, just, i, always, not, mormonism, tierrah46, wont,
+Nearest to would: will, should, can, might, could, may, must, doesn,
+Nearest to so: too, but, how, as, really, very, ʷʰʸ, carpoolkaraoke,
+Nearest to should: will, would, must, can, could, don, may, to,
+Nearest to good: great, bad, small, lizs_heart, meaningless, scratch, sore, disowning,
+Nearest to of: for, buried, ʷʰʸ, from, imperative, freebiafra, tbyg, newshour,
+Nearest to like: mean, optimize, psychedelic, feminist, make, ge, ielvisgomes, allergic,
+Nearest to realdonaldtrump: trump, hillaryclinton, potus, now, neverhillary, yes, gaylovematters, liberry,
+Nearest to at: brings, in, after, fathersday, obamas, pecker, sellbeats, legislatives2017,
+Nearest to me: them, him, us, her, you, myself, mkd9wroe9e, fixes,
+Nearest to more: better, most, less, whaa, caves, ign, ʷʰʸ, worse,
+Nearest to his: her, your, their, my, its, the, our, ur,
+Average loss at step  92000 :  4.577942245841026
+Average loss at step  94000 :  4.570807527422905
+Average loss at step  96000 :  4.5589815218448635
+Average loss at step  98000 :  4.546109932661056
+Average loss at step  100000 :  4.539864033818245
+Nearest to will: should, would, can, could, gonna, may, must, won,
+Nearest to us: u, me, them, our, him, america, lunatics, american,
+Nearest to says: doesn, said, has, would, 3qdisjyhb9, dun, did, beyoncé,
+Nearest to up: outlaw, nohostagestaken, comebacks, down, off, ano, f35, decisive,
+Nearest to never: ever, always, just, wont, finally, not, tierrah46, kcstar,
+Nearest to would: will, should, can, might, could, may, doesn, must,
+Nearest to so: too, but, how, as, really, ʷʰʸ, very, carpoolkaraoke,
+Nearest to should: will, would, must, can, could, don, may, didn,
+Nearest to good: great, bad, small, lizs_heart, meaningless, scratch, disowning, real,
+Nearest to of: buried, ʷʰʸ, for, tbyg, ll90iekoet, in, imperative, cathedral,
+Nearest to like: mean, psychedelic, optimize, feminist, ge, stre, ielvisgomes, want,
+Nearest to realdonaldtrump: trump, hillaryclinton, potus, neverhillary, now, yes, UNK, gaylovematters,
+Nearest to at: brings, 200m, fathersday, in, legislatives2017, pecker, obamas, presidentbannon,
+Nearest to me: them, him, us, myself, her, you, fixes, mkd9wroe9e,
+Nearest to more: less, better, most, caves, ign, whaa, worse, wiretapped,
+Nearest to his: her, their, your, my, its, the, dx1xhel8tk, our,
+
+
+
+
