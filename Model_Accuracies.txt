@@ -1,0 +1,21 @@
+Model Accuracies:
+
+SGD
+Best Parameters: loss='perceptron', penalty='l1', alpha=10, rate='optimal'
+Fold accuracies are: [0.63507109 0.63507109 0.63333333 0.63333333 0.63636364]
+Overall Accuracy is 0.6346344966250179
+
+Random Forest
+Best Parameters: n_estimators=16, max_depth=9
+Fold accuracies are: [0.8957346  0.90047393 0.92857143 0.93809524 0.92822967]
+Overall Accuracy is 0.9182209725088247
+
+Neural Net
+Best Parameters: solver='adam', alpha=1, hidden_layer=(2, 4, 2), max_iter=1000
+Fold accuracies are: [0.90995261 0.92417062 0.88571429 0.90952381 0.90430622]
+Overall Accuracy is 0.9067335076165207
+
+Boosted Decision Trees
+Best Parameters: loss='deviance', learning_rate=0.1, n_estimators=100, max_depth=3
+Fold accuracies are: [0.95260664 0.95260664 0.96190476 0.97142857 0.93779904]
+Overall Accuracy is 0.955269129307543

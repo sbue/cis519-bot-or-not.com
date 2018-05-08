@@ -15,7 +15,7 @@ common_words = set(stopwords.words('english'))
 other_ignore = ["'s", "s", "t", "'t"]
 wnlemma = WordNetLemmatizer()
 
-def word_plot(text, num_tweets, with_punc=False, bigram=False):
+def word_plot(text, num_tweets, with_punc=False, bigram=False, graph=False):
 	word_dict = {}
 	if (with_punc):
 		split_words = word_tokenize(text)
@@ -38,15 +38,19 @@ def word_plot(text, num_tweets, with_punc=False, bigram=False):
 			else:
 				word_dict[word] = 1
 	most_common = sorted(word_dict.items(), key=lambda x: -1*x[1])[:30]
-	x = np.arange(20)
-	fig, ax = plt.subplots()
-	unzipped = list(zip(*most_common[:20]))
-	freq_vals = []
-	for val in unzipped[1]:
-		freq_vals.append(val / num_tweets)
-	plt.bar(x, freq_vals)
-	plt.xticks(x, unzipped[0])
-	plt.show()
+	for word, freq in most_common:
+		ratio = freq / num_tweets
+		print(word+": "+str(ratio))
+	if graph:
+		x = np.arange(20)
+		fig, ax = plt.subplots()
+		unzipped = list(zip(*most_common[:20]))
+		freq_vals = []
+		for val in unzipped[1]:
+			freq_vals.append(val / num_tweets)
+		plt.bar(x, freq_vals)
+		plt.xticks(x, unzipped[0])
+		plt.show()
 
 
 
@@ -61,7 +65,7 @@ with open('russian-troll-tweets/tweets.csv', newline='') as csvfile:
 		all_bot_tweets.append(row)
 		num_bot_tweets += 1
 
-with open('election_tweets.csv', newline='') as csvfile:
+with open('organic_tweets.csv', newline='') as csvfile:
 	reader = csv.DictReader(csvfile)
 	for row in reader:
 		all_ppl_tweets.append(row)
@@ -74,12 +78,19 @@ for b_tweet in all_bot_tweets:
 for p_tweet in all_ppl_tweets:
 	all_ppl_tweet_text += p_tweet['text']
 
-word_plot(all_bot_tweet_text, num_bot_tweets, with_punc=False, bigram=False)
-# word_plot(all_ppl_tweet_text, num_ppl_tweets, with_punc=False, bigram=False)
-# word_plot(all_bot_tweet_text, num_bot_tweets, with_punc=True, bigram=False)
-# word_plot(all_ppl_tweet_text, num_ppl_tweets, with_punc=True, bigram=False)
-# word_plot(all_bot_tweet_text, num_bot_tweets, with_punc=False, bigram=True)
-# word_plot(all_ppl_tweet_text, num_ppl_tweets, with_punc=False, bigram=True)
+
+print("\nBots (no punctuation)")
+word_plot(all_bot_tweet_text, num_bot_tweets, with_punc=False, bigram=False, graph=False)
+print("\nUsers (no punctuation)")
+word_plot(all_ppl_tweet_text, num_ppl_tweets, with_punc=False, bigram=False, graph=False)
+print("\nBots (with punctuation)")
+word_plot(all_bot_tweet_text, num_bot_tweets, with_punc=True, bigram=False, graph=False)
+print("\nUsers (with punctuation)")
+word_plot(all_ppl_tweet_text, num_ppl_tweets, with_punc=True, bigram=False, graph=False)
+print("\nBots (bigrams)")
+word_plot(all_bot_tweet_text, num_bot_tweets, with_punc=False, bigram=True, graph=False)
+print("\nUsers (bigrams)")
+word_plot(all_ppl_tweet_text, num_ppl_tweets, with_punc=False, bigram=True, graph=False)
 
 
 

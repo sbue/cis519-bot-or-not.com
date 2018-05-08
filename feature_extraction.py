@@ -267,7 +267,7 @@ for user, user_tweets in tqdm(users.items()):
 		else:
 			creation_time = get_time(profile['created_at'])
 
-		extra_data = [favorites, followers, friends, listed, creation_time]
+		extra_data = [favorites/float(profile['statuses_count']), followers, friends, listed, creation_time]
 		# extra_data.extend(tweet2vec(profile['description']))
 		users[key].extend(extra_data)
 	# Ignore the tweet otherwise
@@ -320,7 +320,7 @@ for bot, bot_tweets in tqdm(bots.items()):
 		if missing_data:
 			to_del.append(key)
 		else:
-			extra_data = [favorites, followers, friends, listed, creation_time]
+			extra_data = [favorites/float(profile['statuses_count']), followers, friends, listed, creation_time]
 			# extra_data.extend(tweet2vec(profile['description']))
 			bots[key].extend(extra_data)
 	# Ignore the tweet otherwise
@@ -332,8 +332,8 @@ for key in to_del:
 	del bots[key]
 	
 
-save_obj(users, 'users_features_v3')
-save_obj(bots, 'bots_features_v3')
+save_obj(users, 'users_features_v4')
+save_obj(bots, 'bots_features_v4')
 # print("\nUsers:")
 # print(users)
 # print("\nBots:")

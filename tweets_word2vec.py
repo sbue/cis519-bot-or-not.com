@@ -49,45 +49,6 @@ def load_obj(name):
         return pickle.load(f)
 
 
-# final_embeddings = load_obj('final_embeddings')
-# reverse_dictionary = load_obj('reverse_dictionary')
-
-# # pylint: disable=missing-docstring
-# # Function to draw visualization of distance between embeddings.
-# def plot_with_labels(low_dim_embs, labels, filename):
-#   assert low_dim_embs.shape[0] >= len(labels), 'More labels than embeddings'
-#   plt.figure(figsize=(18, 18))  # in inches
-#   for i, label in enumerate(labels):
-#     x, y = low_dim_embs[i, :]
-#     plt.scatter(x, y)
-#     plt.annotate(
-#         label,
-#         xy=(x, y),
-#         xytext=(5, 2),
-#         textcoords='offset points',
-#         ha='right',
-#         va='bottom')
-
-#   plt.savefig(filename)
-
-# try:
-#   # pylint: disable=g-import-not-at-top
-#   from sklearn.manifold import TSNE
-#   import matplotlib.pyplot as plt
-
-#   tsne = TSNE(
-#       perplexity=30, n_components=2, init='pca', n_iter=5000, method='exact')
-#   plot_only = 500
-#   low_dim_embs = tsne.fit_transform(final_embeddings[:plot_only, :])
-#   labels = [reverse_dictionary[i] for i in xrange(plot_only)]
-#   plot_with_labels(low_dim_embs, labels, '/Users/manewilliams/Desktop/School/Cis519/Project/tsne.png')
-
-# except ImportError as ex:
-#   print('Please install sklearn, matplotlib, and scipy to show embeddings.')
-#   print(ex)
-
-# exit(0)
-
 # Give a folder path as an argument with '--log_dir' to save
 # TensorBoard summaries. Default is a log folder in current directory.
 current_path = os.path.dirname(os.path.realpath(sys.argv[0]))
@@ -113,7 +74,7 @@ with open('russian-troll-tweets/tweets.csv', newline='') as csvfile:
   for row in reader:
     all_tweets.append(row)
 
-with open('election_tweets.csv', newline='') as csvfile:
+with open('organic_tweets.csv', newline='') as csvfile:
   reader = csv.DictReader(csvfile)
   for row in reader:
     all_tweets.append(row)
@@ -133,12 +94,13 @@ for tweet in all_tweets:
   if index == len(text):
     continue
   text = text[index:]
-  pieces = text.split(' ,;"()') # TODO: Should ' not be split? I.e. keep "won't" and "I'm" etc.?
+  pieces = text.split(' ') # TODO: Should ' be split? 
   for piece in pieces:
     if piece == '' or piece[0] == '@' or (len(piece) >= 4 and piece[0:4] == 'http'):
       continue
     elif piece[0] == '#':
-      vocabulary.append(piece[1:]) # TODO: Should hashtags be ignored?
+      # vocabulary.append(piece[1:]) # TODO: Should hashtags be ignored?
+      continue
     else:
       word_tok = re.split('\W+', piece)
       for word in word_tok:
@@ -146,6 +108,9 @@ for tweet in all_tweets:
         if word not in other_ignore:
           vocabulary.append(word)
 print('Data size', len(vocabulary))
+
+# The rest of the code is taken from TensorFlow's example 
+# (with exception of saving the objects at the end)
 
 # Step 2: Build the dictionary and replace rare words with UNK token.
 vocabulary_size = 50000
